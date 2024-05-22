@@ -1,0 +1,157 @@
+/* common code */
+:root{
+    --orange: #ff7800;
+    --black: #000;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --border: 2rem solid rgba(0, 0, 0, .1);
+    --outline:  1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: 2rem solid var(--black);
+}
+/* common code */
+
+
+
+/* madia query */
+
+@media (max-width: 991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem 9%;
+    }
+}
+
+
+@media (max-width: 768px){
+
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+     .header .search-form{
+        width: 90%;
+     }
+
+    .header .shopping-car{
+        width: 90%;
+    }
+
+    .header .login-formr{
+        width: 90%;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+
+    /* js */
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+    /* js */
+
+    
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+}
+
+
+@media (max-width: 500px){
+
+    html{
+        font-size: 50%;
+       
+    }
+    
+    .heading{
+        font-size: 2.5rem;
+    }
+
+    .products h1{
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    .wrapper{
+        display:block;
+    }
+
+    .wrapper .box{
+        width: 90%;
+        margin-right: 30px;
+    }
+
+    .products .all-fode{
+        display: block;
+    }
+
+    .all-fode .box{
+        width: 90%;
+        margin-top: 25px;
+    }
+
+    .mainreview-box{
+        display: block;
+        margin-left: 40px;
+    }
+
+    .review-reting{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .footer{
+        display: block;
+        height: 83vh;
+    }
+
+    .grid1{
+        display: flex;
+    }
+
+    .frist{
+        width: 250px;
+        margin-left: 80px;
+        margin-top: 40px;
+    }
+    
+
+    .contact-info{
+        padding-left: 50px;
+    }
+
+    .grid2{
+        display: flex;
+    }
+}
+/* @media (min-width: 500px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+} */
